@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+// import Jams from "../../components/Jams/Jams"
 
 export default function Navbar() {
   return (
@@ -10,20 +11,27 @@ export default function Navbar() {
 
         <ul className="nav-links">
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">home</Link>
           </li>
           <li>
-            <Link to="/tracks">Tracks</Link>
+            <Link to="/ourjams">our jams</Link>
           </li>
           <li>
-            <Link to="/aboutus">About Us</Link>
+            <Link to="/video">video</Link>
           </li>
           <li>
-            <Link to="/performances">Performances</Link>
+            <Link to="/upcomingEvents">upcoming events</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/tracks">news</Link>
           </li>
+          <li>
+            <Link to="/news">news</Link>
+          </li>
+          <li>
+            <Link to="/contact">contact</Link>
+          </li>
+      
         </ul>
       </nav>
     </div>
