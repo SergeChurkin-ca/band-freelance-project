@@ -4,7 +4,7 @@ import "./App.css";
 
 import Error from "./pages/Error";
 import Home from "./pages/Home";
-import Header from "./components/Header/Header";
+// import Header from "./components/Header/Header";
 import Jams from "./components/Jams/Jams";
 import Video from "./components/Video/Video";
 import UpcomingEvents from "./components/UpcomingEvents/Events";
