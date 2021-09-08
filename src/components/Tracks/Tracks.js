@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-
+import News from "../News/News"
 export default function Tracks() {
 
      
@@ -85,6 +85,7 @@ export default function Tracks() {
           </figure>
         </div>
       </div>
+      <News/>
     </section>
   );
 }

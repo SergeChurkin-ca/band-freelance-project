@@ -776,6 +776,7 @@ figcaption {
 
 .latestnews .content {
   background: none;
+  padding: 5rem 0;
 }
 
 .latestnews ul {
@@ -804,14 +805,6 @@ figcaption {
   font-size: 14px;
 }
 
-.pannel-wrapper {
-  height: 100vh;
-}
-
-.pannel-wrapper h1 {
-  margin-top: 5rem;
-}
-
 /* stay in touch */
 .section,
 .stayintouch {
@@ -821,6 +814,7 @@ figcaption {
   justify-content: center;
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 @media (min-height: 700px) {
@@ -931,6 +925,14 @@ textarea:focus {
     width: 80vw;
     padding: 0.5rem;
   }
+}
+
+.pannel-wrapper {
+  height: 100vh;
+}
+
+.pannel-wrapper h1 {
+  margin-top: 5rem;
 }
 
 /* social links */

@@ -6,6 +6,7 @@ import Loading from "../components/Loading";
 export default function Panel() {
   const [events, setEvents] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [eventName, setEventName] = useState([]);
 
   const fetchTours = async () => {
     const dbRef = firebase.database().ref();
@@ -14,18 +15,19 @@ export default function Panel() {
       const data = snapshot.val();
       const newToursArray = [];
 
-      for (let inventoryName in data) {
+      for (let eventName in data) {
         const toursObject = {
-          id: inventoryName,
-          name: data[inventoryName].name,
-          date: data[inventoryName].date,
-          location: data[inventoryName].location,
-          description: data[inventoryName].description,
+          id: eventName,
+          name: data[eventName].name,
+          date: data[eventName].date,
+          time: data[eventName].time,
+          location: data[eventName].location,
+          description: data[eventName].description,
         };
         newToursArray.push(toursObject);
         setLoading(false);
       }
-      setEvents(newToursArray);
+      setEvents(newToursArray)
     });
   };
 
@@ -41,21 +43,52 @@ export default function Panel() {
     );
   }
 
+  // submitting input to firebase
+  const handleSubmit = (e) => {
+    const dbRef = firebase.database().ref();
+      e.preventDefault();
+      if (eventName.length === 0) {
+          alert('please check your input')
+      } else {
+            dbRef.push(eventName).set({
+      name: eventName
+    });
+      }
+  
+    setEventName("");
+  };
+
   return (
     <div className="pannel-wrapper">
       <h1>panel</h1>
       <ul>
         {events.map((event) => {
           return (
-            <li>
+            <li key={event.id}>
               <p>{event.name}</p>
-              <p>{event.date}</p>
+              <p>
+                {event.date}, {event.time}
+              </p>
               <p>{event.location}</p>
               <p>{event.description}</p>
             </li>
           );
         })}
       </ul>
+      <form onSubmit={(e) => handleSubmit(e)}>
+        <label htmlFor="newEvent">add next event</label>
+        <input
+          type="text"
+          className="noteInput"
+          placeholder="Add event name"
+          name="eventName"
+          value={eventName}
+          onChange={(e) => setEventName(e.target.value)}
+          maxLength="20"
+          // required
+        />
+        <button type="submit">add event</button>
+      </form>
     </div>
   );
 }
