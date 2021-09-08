@@ -1,0 +1,93 @@
+.section-jams {
+    background: url('../assets/images/background-2.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0;
+    height: 100%;
+    border-bottom: solid 2px #212126;
+}
+
+@media (min-width: 1300px) {
+    .section-jams {
+        max-height: 100vh;
+    }
+}
+
+
+/* alterniative section background for mobile devices*/
+
+@media (max-width: 500px) {
+    .section-jams {
+        background-position: -18vw bottom;
+        background-attachment: unset;
+        overflow: hidden;
+        background-size: 700px auto;
+    }
+}
+
+.section-jams .content {
+    height: auto;
+    padding: 4rem 2rem;
+}
+
+.section-jams .text-wrapper {
+    position: initial;
+    color: #fff;
+    text-align: left;
+    text-shadow: none;
+    width: 35vw;
+}
+
+.section-jams h2 {
+    font-size: 70px;
+    font-family: 'Abril Fatface', display;
+    margin-bottom: 1.5rem;
+}
+
+.albums-container {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.albums-wrapper li {
+    text-align: center;
+    padding: 1rem;
+    flex: 1 0 200px;
+}
+
+.albums-wrapper h4 {
+    color: #fff;
+}
+
+.albums-wrapper img {
+    margin-bottom: 2rem;
+    max-width: 400px;
+    min-width: 150px;
+    width: calc(100% - -1vw);
+}
+
+.section-jams .nextevent-wrapper {
+    width: 70vw;
+    max-width: 400px;
+    margin: 10vh auto;
+    padding: 3rem 0;
+    height: auto;
+    text-shadow: -2px 1px 1px #000, 1px -2px 1px #000;
+    background-color: rgba(255, 20, 147, 0.6);
+}
+
+@media (max-width: 463px) {
+    .section-jams .text-wrapper {
+        text-align: center;
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+    .section-jams .nextevent-wrapper {
+        width: 80%;
+    }
+}

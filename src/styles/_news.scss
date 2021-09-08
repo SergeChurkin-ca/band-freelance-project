@@ -1,0 +1,36 @@
+.latestnews {
+    background: url('../assets/images/background-6.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: auto;
+}
+
+.latestnews .content {
+    background: none;
+}
+
+.latestnews ul {
+    list-style: none;
+    display: flex;
+    width: 80vw;
+    gap: 2rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+    text-shadow: -1px 2px 2px #000, 2px -1px 2px #000;
+    justify-content: center;
+}
+
+.latestnews li {
+    padding: 1rem;
+    line-height: 1.5;
+    flex: 1 0 300px;
+}
+
+.latestnews h3 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.latestnews p {
+    font-size: 14px;
+}

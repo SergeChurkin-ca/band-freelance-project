@@ -1,0 +1,70 @@
+.populartracks {
+    background: url('../assets/images/background-5.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.tracks {
+    height: auto;
+}
+
+.tracks .content {
+    height: auto;
+    padding: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tracks .text-wrapper {
+    position: initial;
+    color: #fff;
+    text-shadow: none;
+    margin: 0 3rem 0 10rem;
+    text-align: left;
+    width: 25vw;
+}
+
+.tracks h2 {
+    font-size: 70px;
+    font-family: 'Abril Fatface', display;
+    margin-bottom: 4rem;
+    text-shadow: -2px 1px 1px #000, 1px -2px 1px #000;
+}
+
+
+/* audio player */
+
+.audio-wrapper {
+    width: 50vw;
+    height: auto;
+    flex: 1 0 320px;
+    justify-content: baseline;
+    text-align: center;
+}
+
+audio {
+    width: 90%;
+    border: solid 2px #000;
+    border-radius: 27px;
+}
+
+figcaption {
+    margin-bottom: 0.5rem;
+    text-align: left;
+    margin-left: 4rem;
+    font-size: 14px;
+}
+
+@media (max-width: 890px) {
+    .tracks .text-wrapper {
+        text-align: center;
+        margin: 0 1rem;
+        width: 80vw;
+    }
+    audio {
+        width: 90%;
+    }
+    figcaption {
+        margin-left: 3rem;
+    }
+}

@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface:regular|Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic|Poppins:300,300italic,regular,italic,500,500italic,600,600italic,700,700italic&subset=latin');
+@import url('https://fonts.googleapis.com/css2?family=Sniglet:wght@800&display=swap');
+@import url('https://use.fontawesome.com/releases/v5.11.2/css/all.css');
+html {
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+section {
+    height: 100vh;
+    color: whitesmoke;
+    scroll-margin-top: 4rem;
+}
+
+@media (max-width: 722px) {
+    section {
+        scroll-margin-top: 17rem;
+    }
+}
+
+.content {
+    background-color: #212126;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+}
+
+.nextevent-wrapper {
+    height: 30vh;
+    text-align: center;
+    margin: 5vh
+}
+
+.upcomingevents .content {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20vh auto;
+    padding: 0;
+}

@@ -1,38 +1,35 @@
 import React from "react";
-import { Link } from "react-router-dom";
-// import Jams from "../../components/Jams/Jams"
 
 export default function Navbar() {
   return (
     <div>
       <nav className="navbar">
+        <input type="checkbox" id="toggle" className="toggle" name="toggle" />
         <i className="fa fa-bars"></i>
-        <input type="checkbox" id="toggle" name="toggle" />
+        <i className="fa fa-times"></i>
 
-        <ul className="nav-links">
-          <li>
-            <Link to="/">home</Link>
-          </li>
-          <li>
-            <Link to="/ourjams">our jams</Link>
-          </li>
-          <li>
-            <Link to="/video">video</Link>
-          </li>
-          <li>
-            <Link to="/upcomingEvents">upcoming events</Link>
-          </li>
-          <li>
-            <Link to="/tracks">news</Link>
-          </li>
-          <li>
-            <Link to="/news">news</Link>
-          </li>
-          <li>
-            <Link to="/contact">contact</Link>
-          </li>
-      
-        </ul>
+           <ul>
+                <li>
+                    <a href="/">home</a>
+                </li>
+                <li>
+                    <a href="#jams">our jams</a>
+                </li>
+                <li>
+                    <a href="#video">video</a>
+                </li>
+                <li>
+                    <a href="#upcomingevents">upcoming events</a>
+                </li>
+                <li>
+                    <a href="#tracks">tracks</a>
+                </li>
+                <li>
+                    <a href="#news">news</a>
+                </li>
+
+                <li><a href="#contact">contact</a></li>
+            </ul>
       </nav>
     </div>
   );
