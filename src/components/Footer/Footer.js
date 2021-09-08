@@ -28,7 +28,7 @@ export default function Footer() {
                         </a>
                     </li>
                     <li>
-                        <a className="git-ic mr-3 " href="https://youtube.com" aria-label="Our Instagram" title="Our Instagram">
+                        <a className="git-ic mr-3 " href="https://instagram.com" aria-label="Our Instagram" title="Our Instagram">
                             <i className="fab fa-lg fa-instagram"></i>
                         </a>
                     </li>
